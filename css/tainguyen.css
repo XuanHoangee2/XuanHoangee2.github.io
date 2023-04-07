@@ -1,0 +1,108 @@
+table{
+    border: 1px solid black;
+}
+#menu_text{
+    margin: 0;
+}
+
+#menu_text{
+    text-align: center;
+    background-color: #21c277;
+    padding: 80px;
+}
+nav{
+    background-color: #4a453b;
+    overflow: hidden;
+}
+nav a{
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    text-decoration: 0;
+    text-align: center;
+}
+nav a.menu_left{
+    float: left;
+}
+.menu_right{
+    float: right;
+}
+nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+#flex_container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#left_side{
+    flex:30%;
+    background-color: #f1f1ff;
+    padding: 10px 20px;
+}
+#right_side{
+    flex:70%;
+    padding: 10px 20px;
+}
+footer{
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    
+}
+footer a{
+    color: white;
+    text-decoration: 0;
+}
+.img_container{
+    text-align: center;
+    flex: 33%;
+}
+.img{
+    width: 90%;
+}
+#memory_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+@media(max-width: 800px){
+    #flex_container{
+        flex-wrap: wrap;
+    }
+    #left_side{
+        flex: 100%;
+    }
+    #right_side{
+        flex: 100%
+    }
+    .img_container{
+        flex: 50%;
+    }
+}
+.title{
+    font-size: 150%;
+    font-weight: bold;
+    padding: 5px;
+}
