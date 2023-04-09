@@ -4,7 +4,6 @@ table{
 #menu_text{
     margin: 0;
 }
-
 #menu_text{
     text-align: center;
     background-color: #21c277;
@@ -13,6 +12,8 @@ table{
 nav{
     background-color: #4a453b;
     overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
 }
 nav a{
     color: white;
@@ -21,11 +22,11 @@ nav a{
     text-decoration: 0;
     text-align: center;
 }
-nav a.menu_left{
-    float: left;
+.menu_left{
+    flex: 50%;
 }
 .menu_right{
-    float: right;
+    flex: 50%;
 }
 nav a:hover{
     background-color: #ddd;
@@ -87,7 +88,7 @@ table th {
   background-color: #04AA6D;
   color: white;
 }
-@media(max-width: 800px){
+@media(max-width: 600px){
     #flex_container{
         flex-wrap: wrap;
     }
@@ -99,6 +100,15 @@ table th {
     }
     .img_container{
         flex: 50%;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    .menu_right{
+        flex:100% ;
+    }
+    .menu_left{
+        flex: 100%;
     }
 }
 .title{
